@@ -55,3 +55,9 @@ body {
 
     opacity: 0;
 }
+
+img {
+    z-index: 3;
+    width: 50px;
+    display: none;
+}

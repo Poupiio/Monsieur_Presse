@@ -1,5 +1,6 @@
 const boxes = document.querySelectorAll('.box');
 const eye = document.querySelector('.eye');
+const smile = document.querySelector('.smile');
 const title = document.querySelector('.title');
 
 let purpleCount = 0;
@@ -32,6 +33,11 @@ boxes.forEach((box) => {
     if (box.id == "eye") {
         box.addEventListener('mouseenter', () => {
             eye.style.visibility = "visible";
+        });
+    }
+    if (box.id == "smile") {
+        box.addEventListener('mouseenter', () => {
+            smile.style.display = "block";
         });
     }
 });
