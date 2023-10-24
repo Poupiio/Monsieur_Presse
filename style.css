@@ -19,6 +19,8 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(11, 1fr);
+
+    position: relative;
 }
 
 .box {
@@ -39,4 +41,17 @@ body {
     bottom: 10px;
     left: -10px;
     visibility: hidden;
+}
+
+.title {
+    position: absolute;
+    z-index: 13;
+    font-size: 3rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: purple;
+    top: 28%;
+
+    opacity: 0;
 }
