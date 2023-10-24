@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: solid 1px #000;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.box {
+    border: solid 1px #000;
+    transition: 0.3s ease;
+}
+
+#eye {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    bottom: 10px;
+    left: -10px;
+    visibility: hidden;
+}
